@@ -19,8 +19,6 @@ import torchvision
 from sklearn.datasets import fetch_openml
 import numpy as np
 import matplotlib.pyplot as plt
-from captum.attr import IntegratedGradients
-from captum.attr import visualization as viz
 from matplotlib.colors import LinearSegmentedColormap
 
 
@@ -38,7 +36,7 @@ class MNISTDataset(Dataset):
         return image, label
 
 # Load data from sklearn
-mnist = fetch_openml('mnist_784')
+mnist = fetch_openml('mnist_784', parser = 'auto')
 
 data = mnist.data.to_numpy().reshape(-1, 1, 28, 28).astype(np.float32) / 255  # normalize the data to [0, 1]
 targets = mnist.target.to_numpy().astype(np.int64)  # targets are the labels
