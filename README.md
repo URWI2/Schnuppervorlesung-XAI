@@ -1,6 +1,8 @@
 # Schnuppervorlesung-XAI
 
 Hier findet ihr den Code zu der Schnuppervorlesung XAI. 
+Der Code liegt einmal als reine Python Datei vor und als Jupyter Notebook Datei.  
+
 
 Die benötigte Python Umgebung kann mit den folgenden Befehlen aufgesetzt werden: 
 
